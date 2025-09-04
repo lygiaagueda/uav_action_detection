@@ -1,0 +1,10 @@
+#!/bin/bash
+
+VENV_PATH="/home/lygia/action_detection/src/venv/bin/activate"
+
+NODE_SCRIPT_PATH="/home/lygia/action_detection/src/detector/detector/detector_node.py"
+
+source "$VENV_PATH"
+
+# Executa o nó Python, passando todos os argumentos que o ros2 launch enviar (representados por "$@")
+exec python "$NODE_SCRIPT_PATH" "$@"

@@ -1,0 +1,22 @@
+detector_node:
+  ros__parameters:
+    image_topic: "/camera/image_raw"
+    prediction_topic: "/gesture_prediction"
+    debug_image_topic: "/gesture_debug_image"
+    model:
+      input_features: 16
+      d_model: 128
+      nhead: 4
+      num_encoder_layers: 3
+      dim_feedforward: 256
+      num_classes: 13
+      sequence_length: 60
+    model_path: "models/best_transformer_gesture_model_8_keys_perera_lucas_seno.pth"
+    class_names: ['hover', 'land', 'all_clear', 'have_command', 'landing_direction', 
+                  'move_ahead', 'move_downward', 'move_to_left', 'move_to_right', 'move_upward', 
+                  'not_clear', 'slow_down', 'wave_off']
+    mediapipe:
+      min_detection_confidence: 0.5
+      min_tracking_confidence: 0.5
+      joints_to_use: [0, 33, 12, 14, 16, 11, 13, 15]
+    device: "cpu"
