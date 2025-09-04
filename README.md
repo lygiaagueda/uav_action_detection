@@ -4,19 +4,19 @@
 Este pacote tem como objetivo detectar ações realizadas por um humano, que podem ser utilizadas para controlar um drone.
 
 As ações previstas podem ser uma das seguintes classes:
-    - hover
-    - land
-    - all_clear
-    - have_command
-    - landing_direction
-    - move_ahead
-    - move_downward
-    - move_to_left
-    - move_to_right
-    - move_upward
-    - not_clear
-    - slow_down
-    - wave_off
+- hover
+- land
+- all_clear
+- have_command
+- landing_direction
+- move_ahead
+- move_downward
+- move_to_left
+- move_to_right
+- move_upward
+- not_clear
+- slow_down
+- wave_off
 
 Mais detalhes sobre cada classe podem ser encontrados em [UAV-GESTURE: A Dataset for UAV Control and Gesture Recognition](https://asankagp.github.io/uavgesture/).
 
