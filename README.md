@@ -22,7 +22,14 @@ Mais detalhes sobre cada classe podem ser encontrados em [UAV-GESTURE: A Dataset
 
 Além disso, o pacote pode retornar Pose Incompleta quando nem todos os pontos do corpo humano de interesse forem detectados.
 
-## Preparação do ambiente
+## Instalação de bibliotecas
+Instale o opencv-bridge
+
+```
+sudo apt-get install ros-humble-cv-bridge
+```
+
+## Preparação do ambiente Python
 
 Para executar o pacote, é necessário ter instalado o ROS 2 Humble e criar um ambiente virtual Python:
 
